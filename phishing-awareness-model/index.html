@@ -1,0 +1,53 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phishing Awareness Training</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>🎣 Phishing Awareness Interactive Module</h1>
+    <p>Learn how to detect and avoid phishing scams</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="quiz.html">Take the Quiz</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>🚨 What is Phishing?</h2>
+      <p>Phishing is a type of cyber attack where attackers trick people into revealing sensitive information like passwords or credit card numbers by pretending to be trustworthy sources.</p>
+    </section>
+
+    <section>
+      <h2>📬 Can You Spot the Fake?</h2>
+      <p>Here are two emails. Click the one you think is fake.</p>
+      <div class="email-compare">
+        <img src="assets/email1.png" alt="Email 1" onclick="checkAnswer('email1')">
+        <img src="assets/email2.png" alt="Email 2" onclick="checkAnswer('email2')">
+      </div>
+      <p id="result"></p>
+    </section>
+
+    <section>
+      <h2>✅ Tips to Stay Safe</h2>
+      <ul>
+        <li>Never click suspicious links</li>
+        <li>Check sender email address carefully</li>
+        <li>Use two-factor authentication (2FA)</li>
+        <li>Report phishing attempts</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Almeerah Firdouse | Phishing Awareness Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

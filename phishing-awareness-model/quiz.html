@@ -1,0 +1,54 @@
+<!-- quiz.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Phishing Awareness Quiz</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>🧪 Phishing Awareness Quiz</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="quiz.html">Take the Quiz</a>
+    </nav>
+  </header>
+
+  <main>
+    <form id="quizForm">
+      <div class="question">
+        <h3>1. Which of the following is a common sign of a phishing email?</h3>
+        <label><input type="radio" name="q1" value="a" /> The email is from a trusted sender</label><br />
+        <label><input type="radio" name="q1" value="b" /> It contains urgent language asking to act fast</label><br />
+        <label><input type="radio" name="q1" value="c" /> It has proper grammar and spelling</label>
+      </div>
+
+      <div class="question">
+        <h3>2. What should you do if you receive a suspicious email?</h3>
+        <label><input type="radio" name="q2" value="a" /> Click the links to check if they work</label><br />
+        <label><input type="radio" name="q2" value="b" /> Delete it without reporting</label><br />
+        <label><input type="radio" name="q2" value="c" /> Verify sender identity and report the email</label>
+      </div>
+
+      <div class="question">
+        <h3>3. Which security feature helps protect your accounts from phishing?</h3>
+        <label><input type="radio" name="q3" value="a" /> Two-factor authentication (2FA)</label><br />
+        <label><input type="radio" name="q3" value="b" /> Using the same password everywhere</label><br />
+        <label><input type="radio" name="q3" value="c" /> Ignoring software updates</label>
+      </div>
+
+      <button type="button" onclick="submitQuiz()">Submit</button>
+    </form>
+
+    <div id="result" style="margin-top: 20px; font-weight: bold;"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Almeerah Firdouse | Phishing Awareness Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
